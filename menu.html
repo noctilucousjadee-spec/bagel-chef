@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bagel Menu Singapore | Bagel Chef — Bagels, Spreads, Sandwiches & Dozen Deals</title>
+  <meta name="description" content="Browse the Bagel Chef menu: kettle-boiled bagels (plain, everything, sesame, sourdough and more), house-made cream cheese spreads, breakfast sandwiches, drinks and dozen deals in Singapore.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥯</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="bake-strip" data-bake-strip hidden aria-label="Today's bake times"></aside>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Bagel Chef — home">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16" fill="#F2B33D" stroke="#6B3F1D" stroke-width="2.5"/>
+          <circle cx="20" cy="20" r="5.5" fill="#FFF8EC" stroke="#6B3F1D" stroke-width="2"/>
+          <circle cx="12" cy="13" r="1.4" fill="#6B3F1D"/><circle cx="27" cy="11" r="1.4" fill="#6B3F1D"/>
+          <circle cx="31" cy="22" r="1.4" fill="#6B3F1D"/><circle cx="10" cy="25" r="1.4" fill="#6B3F1D"/>
+          <circle cx="20" cy="30" r="1.4" fill="#6B3F1D"/><circle cx="22" cy="18" r="1.1" fill="#6B3F1D"/>
+        </svg>
+        <span>Bagel <em>Chef</em></span>
+      </a>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="order-cta btn btn--sm" href="order.html">Order Online</a>
+        <button class="cart-btn" aria-label="Open your cart"><span aria-hidden="true">🛍️</span><span class="cart-badge" hidden>0</span></button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">The menu</span>
+        <h1>What's in the case today</h1>
+        <p class="lede">Everything is baked in-house, every morning, until we sell out. Prices in SGD. Tap a category to jump — or just scroll and get hungrier slowly.</p>
+      </div>
+    </section>
+
+    <nav class="menu-tabs" id="menuTabs" aria-label="Menu categories"></nav>
+    <div class="wrap" id="menuRoot"></div>
+
+    <section class="section">
+      <div class="wrap" style="text-align:center" data-animate>
+        <h2>Building a dozen?</h2>
+        <p class="lede" style="margin-bottom:20px">Mix & match any 12 bagels and save around 20%. Your future self says thanks.</p>
+        <a class="btn btn--lg" href="order.html">Start an order</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Bagel Chef</h3>
+          <p>Hand-rolled, kettle-boiled, baked fresh every morning. Singapore's neighbourhood bagel shop — chewy on the inside, serious about the outside.</p>
+          <div class="social-row">
+            <a href="https://instagram.com/bagelchefsg" target="_blank" rel="noopener" aria-label="Bagel Chef on Instagram">IG</a>
+            <a href="https://facebook.com/bagelchefsg" target="_blank" rel="noopener" aria-label="Bagel Chef on Facebook">FB</a>
+            <a href="https://tiktok.com/@bagelchefsg" target="_blank" rel="noopener" aria-label="Bagel Chef on TikTok">TT</a>
+          </div>
+        </div>
+        <div>
+          <h3>Visit us</h3>
+          <p>52 Seng Poh Road, #01-03<br>Singapore 160052<br><a href="tel:+6565550134">+65 6555 0134</a><br><a href="mailto:hello@bagelchef.sg">hello@bagelchef.sg</a></p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Explore</h3>
+          <ul class="footer-nav">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order online</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="catering.html">Catering & bulk</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-signup">
+          <h3>Weekly specials</h3>
+          <form class="js-signup" novalidate>
+            <input type="email" name="email" required placeholder="Your email" aria-label="Email address">
+            <button class="btn btn--sm" type="submit">Get 10% off</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Bagel Chef Singapore. All bagels reserved.</span>
+        <span>Hand-rolled daily · Kettle-boiled always</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
